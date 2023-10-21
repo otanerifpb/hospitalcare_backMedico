@@ -1,4 +1,4 @@
-package br.edu.ifpb.pdist.back;
+package br.edu.ifpb.pdist.back.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;

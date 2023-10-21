@@ -1,4 +1,4 @@
-package br.edu.ifpb.pdist.back;
+package br.edu.ifpb.pdist.back.controller;
 
 import br.edu.ifpb.pdist.back.model.Medico;
 import br.edu.ifpb.pdist.back.repository.MedicoRepository;
