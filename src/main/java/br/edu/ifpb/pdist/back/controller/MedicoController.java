@@ -44,7 +44,7 @@ public class MedicoController {
 
     // Rota para acessar o formunário
     @RequestMapping("/formMedico")
-    public ModelAndView getFormEstu(Medico medico, ModelAndView mav) {
+    public ModelAndView getFormMedico(Medico medico, ModelAndView mav) {
         mav.addObject("medico", medico);
         mav.setViewName("medico/formMedico");
         return mav;
