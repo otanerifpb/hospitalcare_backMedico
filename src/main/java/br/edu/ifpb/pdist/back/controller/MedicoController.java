@@ -42,12 +42,12 @@ public class MedicoController {
     }
 
     // Rota para acessar o formunário
-    @RequestMapping("/formMedico")
-    public ModelAndView getFormMedico(Medico medico, ModelAndView mav) {
-        mav.addObject("medico", medico);
-        mav.setViewName("medico/formMedico");
-        return mav;
-    }
+    // @RequestMapping("/formMedico")
+    // public ModelAndView getFormMedico(Medico medico, ModelAndView mav) {
+    //     mav.addObject("medico", medico);
+    //     mav.setViewName("medico/formMedico");
+    //     return mav;
+    // }
 
     // Rota para cadastrar um Médico no Sitema
     @RequestMapping(value="/save", method = RequestMethod.POST)
