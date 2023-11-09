@@ -43,4 +43,38 @@ public class Medico implements Serializable {
     private String especialidade;
 
     private String telefone;
+
+    public void setName(String name) {
+        if(name.isBlank())
+            throw new IllegalArgumentException("Nome nao pode ser vazio!");
+        this.nome = name;
+    }
+
+    public void setCrm(String crm) {
+        if(crm.length() != 7)
+            throw new IllegalArgumentException("CRM deve conter 7 digitos!");
+        if(crm.isBlank())
+            throw new IllegalArgumentException("CRM nao pode ser vazio!");    
+        this.crm = crm;
+    }
+
+    public void setSexo(String sexo) {
+        this.sexo = sexo;
+    }
+
+    public void setEspecialidade(String especialidade) {
+        this.especialidade = especialidade;
+    }
+
+    public void setTelefone(String telefone) {
+        this.telefone = telefone;
+    }
+
+    public Medico(String name, String crm, String sexo, String especialidade, String telefone) {
+        this.nome = name;
+        this.crm = crm;
+        this.sexo = sexo;
+        this.especialidade = especialidade;
+        this.telefone = telefone;
+    }
 }
