@@ -15,7 +15,7 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 @RestController
-@CrossOrigin(origins = "https://hospitalfront-c6fcfdd1340e.herokuapp.com")
+@CrossOrigin(origins = "https://hospitalview-8171b04dfdb4.herokuapp.com")
 @RequestMapping("/medico")
 public class MedicoController {
 
